@@ -2307,6 +2307,12 @@ config UCLIBC_EXTRA_CFLAGS
 	help
 	  Add any additional CFLAGS to be used to build uClibc.
 
+config UCLIBC_EXTRA_LDFLAGS
+	string "Extra LDFLAGS"
+	default ""
+	help
+	  Add any additional LDFLAGS to be used to link uClibc.
+
 config DODEBUG
 	bool "Enable debugging symbols"
 	select EXTRA_WARNINGS
